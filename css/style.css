@@ -151,28 +151,61 @@ img:hover {
   padding: 10px;
 }
 
-#song1 {
-  float: left;
-  width: 30%; 
-  background-color: rgb(234, 75, 75);
-  margin: 0 0 0 2.5%;
+/* Media queries*/
+
+@media screen and (min-width: 900px) {
+  #song1 {
+    float: left;
+    width: 30%; 
+    background-color: rgb(234, 75, 75);
+    margin: 0 0 0 2.5%;
+  }
+  
+  #song2 {
+    float: left;
+    width: 30%;
+    background-color: rgb(53, 135, 24);
+    margin: 0 2.5%;
+  }
+  
+  #song3 {
+    float: left;
+    width: 30%;
+    background-color: rgb(157, 134, 2);
+    margin: 0 2.5% 0 0;
+  }
+
+  iframe {
+    width: 80%;
+    height: auto;
+  }
 }
 
-#song2 {
-  float: left;
-  width: 30%;
-  background-color: rgb(53, 135, 24);
-  margin: 0 2.5%;
-}
+@media screen and (max-width: 900px) {
+  #song1 {
+    background-color: rgb(234, 75, 75);
+    margin: 10px 10px;
+    padding: 10px;
+    margin: 2.5%;
+  }
+  
+  #song2 {
+    background-color: rgb(53, 135, 24);
+    margin: 10px 10px;
+    padding: 10px;
+    margin: 2.5%;
+  }
+  
+  #song3 {
+    background-color: rgb(157, 134, 2);
+    margin: 10px 10px;
+    padding: 10px;
+    margin: 2.5%;
+  }
 
-#song3 {
-  float: left;
-  width: 30%;
-  background-color: rgb(157, 134, 2);
-  margin: 0 2.5% 0 0;
-}
-
-iframe {
-  width: 80%;
-  height: auto;
+  iframe {
+    width: auto;
+    height: auto;
+    margin: 2px 2px;
+  }
 }
