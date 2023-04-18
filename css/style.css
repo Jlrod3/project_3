@@ -1,0 +1,179 @@
+#main-navbar {
+  background-color: rgb(85, 230, 112);
+  overflow: hidden;
+}
+
+#navbar-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+#main-navbar ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block;
+}
+
+#main-navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+}
+
+#main-navbar ul li a:hover {
+  background-color: rgb(53, 135, 24);
+  
+}
+
+body {
+  text-align:center;
+  margin: 20%;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+}
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h4 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* food page css */
+
+img {
+  height: 100px;
+  width: 150px;
+  transition: width 1s, height 1s;
+}
+
+img:hover {
+  height: 200px;
+  width: 300px;
+}
+
+.foodchunk {
+  background-color: burlywood;
+  float: left;
+  margin: 10px 10px;
+  width: 300px;
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 10px;
+
+}
+
+#foodtop {
+  background-color: burlywood;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+#foodbackground {
+  background-color: rgb(163, 231, 231);
+}
+
+/* index page css */
+
+#resume {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0%;
+  text-align: left;
+  background-color: rgb(239, 151, 151);
+  padding: 20px;
+
+}
+
+#resume h1 {
+  text-align: center;
+}
+
+#resumebackground {
+  background-color: rgb(216, 242, 229);
+}
+
+.resumechunk {
+  border: 2px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: rgb(216, 242, 229);
+}
+
+/* Music page css*/
+
+#musicbackground {
+  background-color: gray;
+}
+
+#musichead {
+  background-color: rgb(36, 35, 35);
+  margin: 10px 10px;
+  padding: 10px;
+  margin: 2.5%;
+}
+
+#musicbackground h1{
+  color:#fff;
+}
+
+#musicbackground p{
+  color:#fff;
+  padding: 10px;
+}
+
+#musicbackground h3{
+  color:#fff;
+  padding: 10px;
+}
+
+#song1 {
+  float: left;
+  width: 30%; 
+  background-color: rgb(234, 75, 75);
+  margin: 0 0 0 2.5%;
+}
+
+#song2 {
+  float: left;
+  width: 30%;
+  background-color: rgb(53, 135, 24);
+  margin: 0 2.5%;
+}
+
+#song3 {
+  float: left;
+  width: 30%;
+  background-color: rgb(157, 134, 2);
+  margin: 0 2.5% 0 0;
+}
+
+iframe {
+  width: 80%;
+  height: auto;
+}
