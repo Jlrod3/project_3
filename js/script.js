@@ -1,6 +1,11 @@
 function init() {
     alert('it works');
 
+    map = new Map(document.getElementById('canvas'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+
     let slides = document.getElementsByClassName("slider__slide");
     let navlinks = document.getElementsByClassName("slider__navlink");
     let currentSlide = 0;
@@ -31,4 +36,5 @@ function init() {
             }
         })
     })
+//Javascript code comes from https://alvarotrigo.com/blog/javascript-slider-how-to-make-one/
 }

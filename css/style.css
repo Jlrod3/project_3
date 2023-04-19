@@ -258,7 +258,7 @@ iframe {
   margin: 30px auto;
 }
 
-/* Slider */
+/* Slider code from https://alvarotrigo.com/blog/javascript-slider-how-to-make-one/*/
 .container {
   display: flex;
   align-items: center;
