@@ -181,7 +181,7 @@ iframe {
 /* Media queries for music page*/
 
 /*Tablet*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 899px) {
   #song1 {
     background-color: rgb(254, 118, 118);
   }
@@ -194,7 +194,7 @@ iframe {
     background-color: rgb(242, 242, 100);
   }
 
-  #musicbackground {
+  #musichead {
     background-color: rgb(197, 195, 195);
   }
 
