@@ -9,8 +9,6 @@ document.getElementById("nav-button--prev").addEventListener("click", () => {
     changeSlide(currentSlide - 1)
 });
 
-document.getElementById("nav-button--next").addEventListener("click", changeSlide(currentSlide + 1));
-
 function changeSlide(moveTo) {
     if (moveTo >= slides.length) {moveTo = 0;}
     if (moveTo < 0) {moveTo = slides.length - 1;}

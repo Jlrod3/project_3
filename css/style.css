@@ -328,13 +328,6 @@ iframe {
   transform: translate(75%, -50%) rotate(135deg);
 }
 
-@media screen and (max-width: 640px) {
-  .slider__nav-button {
-    height: 40px;
-    width: 40px;
-  }
-}
-
 .slider__nav {
   position: absolute;
   bottom: 3%;
@@ -358,4 +351,15 @@ iframe {
 .slider__navlink.active {
   background-color: #fff;
   border: 1px #333 solid;
+}
+
+@media screen and (max-width: 640px) {
+  .slider__nav-button {
+    height: 40px;
+    width: 40px;
+  }
+  .slider__navlink {
+    height: 12px;
+    width: 12px;
+  }
 }
