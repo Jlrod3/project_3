@@ -180,7 +180,8 @@ iframe {
 
 /* Media queries for music page*/
 
-@media screen and (min-width: 500) and (max-width: 900px) {
+/*Tablet*/
+@media screen and (min-width: 600) {
   #song1 {
     background-color: rgb(254, 118, 118);
   }
@@ -211,6 +212,7 @@ iframe {
 
 }
 
+/*Desktop*/
 @media screen and (min-width: 900px) {
   #song1 {
     float: left;
