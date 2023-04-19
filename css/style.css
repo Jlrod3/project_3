@@ -182,15 +182,31 @@ iframe {
 
 @media screen and (min-width: 500) and (max-width: 900px) {
   #song1 {
- 
+    background-color: rgb(254, 118, 118);
   }
   
   #song2 {
-
+    background-color: rgb(133, 237, 121);
   }
 
   #song3 {
+    background-color: rgb(242, 242, 100);
+  }
 
+  #musicbackground {
+    background-color: rgb(197, 195, 195);
+  }
+
+  #musicbackground h1{
+    color: black;
+  }
+  
+  #musicbackground p{
+    color: black;
+  }
+  
+  #musicbackground h3{
+    color: black;
   }
 
 }
