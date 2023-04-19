@@ -153,21 +153,21 @@ img:hover {
 
 #song1 {
   background-color: rgb(234, 75, 75);
-  margin-left: 10px 10px;
+  margin: 10px 10px;
   padding: 10px;
   margin: 2.5%;
 }
 
 #song2 {
   background-color: rgb(53, 135, 24);
-  margin-left: 10px 10px;
+  margin: 10px 10px;
   padding: 10px;
   margin: 2.5%;
 }
 
 #song3 {
   background-color: rgb(157, 134, 2);
-  margin-left: 10px 10px;
+  margin: 10px 10px;
   padding: 10px;
   margin: 2.5%;
 }
@@ -181,7 +181,7 @@ iframe {
 /* Media queries for music page*/
 
 /*Tablet*/
-@media screen and (min-width: 600) {
+@media screen and (min-width: 600px) {
   #song1 {
     background-color: rgb(254, 118, 118);
   }
