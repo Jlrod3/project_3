@@ -240,3 +240,45 @@ iframe {
     height: auto;
   }
 }
+
+/* Slider */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.slider__slides {
+  width: 100%;
+  padding-top: 66%;
+}
+
+.slider__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    transition: 1s;
+    opacity: 0;
+}
+
+.slider__slide.active {
+    opacity: 1;
+}
