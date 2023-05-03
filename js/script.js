@@ -19,10 +19,28 @@ async function initMap() {
     mapId: "DEMO_MAP_ID",
   });
 
-  const marker = new AdvancedMarkerView({
+  new google.maps.Marker({
     map: map,
     position: highschool,
     title: "My old Highschool",
+    label: "A",
+
+  });
+
+  new google.maps.Marker({
+    map: map,
+    position: elemschool,
+    title: "My Elementary School",
+    label: "A",
+
+  });
+  
+  new google.maps.Marker({
+    map: map,
+    position: oldhome,
+    title: "My old home",
+    label: "A",
+
   });
 }
 
