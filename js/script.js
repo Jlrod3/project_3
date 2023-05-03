@@ -16,7 +16,8 @@ async function initMap() {
   map = new Map(document.getElementById("canvas"), {
     zoom: 15,
     center: position,
-    mapId: "DEMO_MAP_ID",
+    mapId: "Childhood",
+    mapTypeId: "Satellite"
   });
 
   new google.maps.Marker({
@@ -40,6 +41,7 @@ async function initMap() {
     position: oldhome,
     title: "My old home",
     label: "C",
+    Animation: google.maps.Animation.BOUNCE
 
   });
 }
