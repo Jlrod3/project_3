@@ -31,7 +31,7 @@ async function initMap() {
     map: map,
     position: elemschool,
     title: "My Elementary School",
-    label: "A",
+    label: "B",
 
   });
   
@@ -39,7 +39,7 @@ async function initMap() {
     map: map,
     position: oldhome,
     title: "My old home",
-    label: "A",
+    label: "C",
 
   });
 }
