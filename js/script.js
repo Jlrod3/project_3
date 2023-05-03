@@ -20,7 +20,7 @@ async function initMap() {
     mapTypeId: "Satellite"
   });
 
-  new google.maps.Marker({
+  const highmark = google.maps.Marker({
     map: map,
     position: highschool,
     title: "My old Highschool",
@@ -28,7 +28,7 @@ async function initMap() {
 
   });
 
-  new google.maps.Marker({
+  const elemark =  google.maps.Marker({
     map: map,
     position: elemschool,
     title: "My Elementary School",
@@ -36,7 +36,7 @@ async function initMap() {
 
   });
   
-  new google.maps.Marker({
+  const homemark =  google.maps.Marker({
     map: map,
     position: oldhome,
     title: "My old home",
@@ -46,17 +46,10 @@ async function initMap() {
   });
 }
 
-initMap();
-
 function init() {
     alert('it works');
 
-    map = new Map(document.getElementById('canvas'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-
-    let slides = document.getElementsByClassName("slider__slide");
+    let slides = document.getElementsByClassName("slider__slides");
     let navlinks = document.getElementsByClassName("slider__navlink");
     let currentSlide = 0;
 
