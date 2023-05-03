@@ -2,25 +2,27 @@
 let map;
 
 async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
+  // The location of places from my childhood
+  const position = { lat: 32.686, lng: -114.511 };
+  const elemschool = { lat: 32.68576431453502, lng: -114.50596845588063}
+  const highschool = { lat: 32.68541313428333, lng: -114.51070997639545}
+  const oldhome = { lat: 32.68001818322, lng: -114.5054809301819}
+
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
   map = new Map(document.getElementById("canvas"), {
-    zoom: 4,
+    zoom: 15,
     center: position,
     mapId: "DEMO_MAP_ID",
   });
 
-  // The marker, positioned at Uluru
   const marker = new AdvancedMarkerView({
     map: map,
-    position: position,
-    title: "Uluru",
+    position: highschool,
+    title: "My old Highschool",
   });
 }
 
