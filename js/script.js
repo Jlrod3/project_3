@@ -17,33 +17,52 @@ async function initMap() {
     zoom: 15,
     center: position,
     mapId: "Childhood",
-    mapTypeId: "Satellite"
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
   });
 
-  const highmark = google.maps.Marker({
+  new google.maps.Marker({
     map: map,
     position: highschool,
     title: "My old Highschool",
-    label: "A",
+    Animation: google.maps.Animation.BOUNCE,
+    icon: "images/hawk.png"
 
   });
 
-  const elemark =  google.maps.Marker({
+  new google.maps.Marker({
     map: map,
     position: elemschool,
     title: "My Elementary School",
-    label: "B",
+    label: "X",
+    Animation: google.maps.Animation.DROP
 
   });
   
-  const homemark =  google.maps.Marker({
+  new google.maps.Marker({
     map: map,
     position: oldhome,
     title: "My old home",
-    label: "C",
     Animation: google.maps.Animation.BOUNCE
 
   });
+ 
+  // Making a triangle because why not.
+  const triangleCoords = [
+    { lat: 32.68576431453502, lng: -114.50596845588063},
+    { lat: 32.68541313428333, lng: -114.51070997639545},
+    { lat: 32.68001818322, lng: -114.5054809301819},
+  ];
+
+  const pointTriangle = new google.maps.Polygon({
+    paths: triangleCoords,
+    strokeColor: "#3CB043",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#1338BE",
+    fillOpacity: 0.35,
+  });
+
+  pointTriangle.setMap(map);
 }
 
 function init() {
